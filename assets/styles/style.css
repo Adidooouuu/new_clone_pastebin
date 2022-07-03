@@ -4,3 +4,45 @@
   padding : 0;
   box-sizing : border-box;
 }
+
+:root
+{
+  --bg : #15202B;
+  --form-bg : #1E2732;
+  --color : #FFFFFF;
+  --accent : #F91880;
+  --disabled : #871C56;
+}
+
+body
+{
+  background-color : var(--bg);
+  color : var(--color);
+}
+
+a
+{
+  color : var(--color);
+  text-decoration : none;
+}
+
+input[type="submit"]
+{
+  background-color : transparent;
+  border : none;
+  color : var(--color);
+}
+
+main
+{
+  display : flex;
+  flex-flow : row wrap;
+  align-items : center;
+  justify-content : center;
+}
+
+form
+{
+  display : flex;
+  flex-flow : column nowrap;
+}

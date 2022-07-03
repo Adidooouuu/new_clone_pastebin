@@ -1,6 +1,4 @@
 <?php
-  include("../config.php");
-
   // DEFINED DATAS
   $hostname = constant("HOST");
   $username = constant('USER');

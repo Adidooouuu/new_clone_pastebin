@@ -1,9 +1,13 @@
+<?php
+  require("config.php");
+  require("db/db.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <title>New ClonePastebin</title>
+    <title>Home | <?= constant('APP_NAME') ?></title>
   </head>
   <body>
     <header>
