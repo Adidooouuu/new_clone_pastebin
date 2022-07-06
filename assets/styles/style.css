@@ -1,3 +1,10 @@
+@font-face
+{
+  font-family : Azonix;
+  src : url(../fonts/Azonix.otf);
+  font-weight : normal;
+}
+
 *, *::before, *::after
 {
   margin : 0;
@@ -7,129 +14,35 @@
 
 :root
 {
-  --bg : #252525;
-  --color : #F0F0F0;
-  --accent : orange;
-}
+  --clr-accent-1 : #FFA500;
+  --clr-accent-2 : #55DDE0;
 
-@font-face
-{
-  font-family : Azonix;
-  src : url(../fonts/Azonix.otf);
-  font-weight : normal;
+  --clr-neutral-light : #F0F0F0;
+  --clr-neutral-dark : #252525;
+
+  --font-family-primary : "Gantari", Arial, sans-serif;
+  --font-family-logo : "Azonix", sans-serif;
+
+  --font-family-body : var(--font-family-primary);
+  --font-family-accents : var(--font-family-primary);
+
+  --font-weight-regular : 400;
+  --font-weight-semi-bold : 500;
+  --font-weight-bold : 700;
+
+  --font-size-400 : 1rem;
+  --font-size-500 : 1.25rem;
+  --font-size-700 : 2rem;
 }
 
 body
 {
-  background-color : var(--bg);
-  color : var(--color);
-  font-family : "Gantari", Arial, sans-serif;
-  min-height : 100vh;
-}
-
-a
-{
-  color : var(--accent);
-  text-decoration : none;
-}
-
-li
-{
-  list-style-type : none;
-}
-
-header
-{
-  display : flex;
-  flex-flow : column nowrap;
-  align-items : center;
-  justify-content : space-around;
-  text-align : center;
-  height : 10vh;
-}
-
-.account_managment
-{
-  display : flex;
-  flex-flow : column wrap;
-  align-items : center;
-  justify-content : space-around;
-  min-height : 5vh;
-}
-
-nav, nav ul
-{
-  display : flex;
-  flex-flow : row wrap;
-  gap : 15px;
-}
-
-nav
-{
-  height : 10vh;
-  align-items : center;
-  justify-content : space-between;
-  padding : 0 50px;
+  font-family : var(--font-family-body);
+  font-weight : var(--font-weight-regular);
+  font-size : var(--font-size-400);
 }
 
 .logo
 {
-  font-family : "Azonix", sans-serif;
-  font-size : 20px;
-  letter-spacing : 5px;
-}
-
-main
-{
-  display : flex;
-  flex-flow : row wrap;
-  align-items : center;
-  justify-content : center;
-  min-height : 80vh;
-}
-
-form
-{
-  display : flex;
-  flex-flow : column nowrap;
-}
-
-form h2
-{
-  text-align : center;
-  margin-bottom : 50px;
-}
-
-input, textarea
-{
-  border : none;
-  padding : 10px;
-  margin : 10px 0 20px 0;
-}
-
-input:focus, textarea:focus
-{
-  outline : 2px solid var(--accent);
-}
-
-input[type="submit"]
-{
-  background-color : transparent;
-  color : var(--color);
-}
-
-input[type="submit"]:hover
-{
-  cursor : pointer;
-  box-shadow :
-              0px 0px 20px 2px rgba(255, 140, 0, 0.75),
-              0px 0px 5px 2px rgba(255, 140, 0, 0.75);
-  border : 1px solid orange;
-  padding : calc(10px - 1px);
-}
-
-
-.required
-{
-  color : var(--accent);
+  font-family : var(--font-family-logo);
 }
