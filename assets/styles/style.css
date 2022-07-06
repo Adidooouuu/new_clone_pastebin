@@ -7,30 +7,76 @@
 
 :root
 {
-  --bg : #15202B;
-  --form-bg : #1E2732;
-  --color : #FFFFFF;
-  --accent : #F91880;
-  --disabled : #871C56;
+  --bg : #252525;
+  --color : #F0F0F0;
+  --accent : orange;
+}
+
+@font-face
+{
+  font-family : Azonix;
+  src : url(../fonts/Azonix.otf);
+  font-weight : normal;
 }
 
 body
 {
   background-color : var(--bg);
   color : var(--color);
+  font-family : "Gantari", Arial, sans-serif;
+  min-height : 100vh;
 }
 
 a
 {
-  color : var(--color);
+  color : var(--accent);
   text-decoration : none;
 }
 
-input[type="submit"]
+li
 {
-  background-color : transparent;
-  border : none;
-  color : var(--color);
+  list-style-type : none;
+}
+
+header
+{
+  display : flex;
+  flex-flow : column nowrap;
+  align-items : center;
+  justify-content : space-around;
+  text-align : center;
+  height : 10vh;
+}
+
+.account_managment
+{
+  display : flex;
+  flex-flow : column wrap;
+  align-items : center;
+  justify-content : space-around;
+  min-height : 5vh;
+}
+
+nav, nav ul
+{
+  display : flex;
+  flex-flow : row wrap;
+  gap : 15px;
+}
+
+nav
+{
+  height : 10vh;
+  align-items : center;
+  justify-content : space-between;
+  padding : 0 50px;
+}
+
+.logo
+{
+  font-family : "Azonix", sans-serif;
+  font-size : 20px;
+  letter-spacing : 5px;
 }
 
 main
@@ -39,10 +85,51 @@ main
   flex-flow : row wrap;
   align-items : center;
   justify-content : center;
+  min-height : 80vh;
 }
 
 form
 {
   display : flex;
   flex-flow : column nowrap;
+}
+
+form h2
+{
+  text-align : center;
+  margin-bottom : 50px;
+}
+
+input, textarea
+{
+  border : none;
+  padding : 10px;
+  margin : 10px 0 20px 0;
+}
+
+input:focus, textarea:focus
+{
+  outline : 2px solid var(--accent);
+}
+
+input[type="submit"]
+{
+  background-color : transparent;
+  color : var(--color);
+}
+
+input[type="submit"]:hover
+{
+  cursor : pointer;
+  box-shadow :
+              0px 0px 20px 2px rgba(255, 140, 0, 0.75),
+              0px 0px 5px 2px rgba(255, 140, 0, 0.75);
+  border : 1px solid orange;
+  padding : calc(10px - 1px);
+}
+
+
+.required
+{
+  color : var(--accent);
 }

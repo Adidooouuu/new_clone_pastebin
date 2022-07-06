@@ -1,5 +1,5 @@
 <?php
-  define('WEBSITE', 'testmonsite');
+  define('WEBSITE', 'newclonepastebin');
   define('APP_NAME', 'New ClonePastebin');
 
   define('HOST', 'localhost');
