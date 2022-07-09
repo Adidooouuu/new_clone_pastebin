@@ -1,0 +1,9 @@
+header
+{
+    display : flex;
+    flex-flow : column wrap;
+    align-items : center;
+    justify-content : center;
+    gap : 1ch;
+    padding : 25px 0;
+}

@@ -2,7 +2,7 @@
   <ul>
     <li><a href="/" class="logo">ClonePastebin</a></li>
   </ul>
-  <ul>
+  <ul class="desktop_nav_links">
     <li><a href="/pages/profile.php">Profile</a></li>
     <li><a href="/">Share content</a></li>
     <li><a href="/pages/logout.php">Log out</a></li>
@@ -13,7 +13,7 @@
   <ul class="horizontal_part_mobile_nav">
     <li><a href="/" class="logo">ClonePastebin</a></li>
     <li>
-      <a class="toggle_mobile_nav" id="toggle-mobile-nav" href="#">
+      <a class="toggle_mobile_nav" id="toggle-mobile-nav">
         <span class="toggler_line"></span>
         <span class="toggler_line"></span>
         <span class="toggler_line"></span>
