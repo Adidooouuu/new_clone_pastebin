@@ -1,6 +1,6 @@
 <?php
   define('WEBSITE', 'newclonepastebin');
-  define('APP_NAME', 'New ClonePastebin');
+  define('APP_NAME', 'ClonePastebin');
 
   define('HOST', 'localhost');
   define('USER', 'pastebincloner');

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <title>Home | <?= constant('APP_NAME') ?></title>
   </head>
-  <body>
+  <body class="share_content_page">
     <?php require("partials/nav.php"); ?>
     <header>
       <h1>Hello, Guest!</h1>
@@ -27,14 +27,20 @@
     <main>
       <form class="link_creating_form" method="post" enctype="text/plain">
         <h2>Share some content!</h2>
-        <label for="link_title">Title <span class="required">*</span></label>
-        <input type="text" name="link_title" id="link_title" autocomplete="on">
-
-        <label for="link_content">Content <span class="required">*</span></label>
-        <textarea name="link_content" id="link_content" rows="8" cols="80" autocomplete="on"></textarea>
-
+        <div class="form_group">
+          <label for="link_title">Title <span class="required">*</span></label>
+          <input type="text" name="link_title" id="link_title" autocomplete="on">
+        </div>
+        <div class="form_group">
+          <label for="link_content">Content <span class="required">*</span></label>
+          <textarea name="link_content" id="link_content" rows="8" cols="80" autocomplete="on"></textarea>
+        </div>
         <input type="submit" name="submit" value="Share">
       </form>
+      <aside>
+        <h1>cfejsirufdgjdhg</h1>
+        <p>des trucs</p>
+      </aside>
     </main>
     <footer>
 
